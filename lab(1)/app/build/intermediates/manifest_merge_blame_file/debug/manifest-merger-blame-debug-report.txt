@@ -11,7 +11,7 @@
 9-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:5:5-25:19
+11-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:5:5-28:19
 12        android:allowBackup="true"
 12-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,31 +29,31 @@
 20        android:theme="@style/AppTheme" >
 20-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:11:9-40
 21        <activity android:name="com.example.myapplication.MainActivity" >
-21-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:12:9-18:20
-21-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:12:19-47
+21-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:13:9-19:20
+21-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:13:19-47
 22            <intent-filter>
-22-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:13:13-17:29
+22-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:14:13-18:29
 23                <action android:name="android.intent.action.MAIN" />
-23-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:14:17-69
-23-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:14:25-66
+23-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:15:17-69
+23-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:15:25-66
 24
 25                <category android:name="android.intent.category.LAUNCHER" />
-25-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:16:17-77
-25-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:16:27-74
+25-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:17:17-77
+25-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:17:27-74
 26            </intent-filter>
 27        </activity>
 28        <activity
-28-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:19:9-24:20
+28-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:21:9-26:20
 29            android:name="com.example.myapplication.SecondActivity"
-29-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:19:19-49
+29-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:21:19-49
 30            android:parentActivityName="com.example.myapplication.MainActivity" >
-30-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:20:13-55
+30-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:22:13-55
 31            <meta-data
-31-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:21:13-23:49
+31-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:23:13-25:49
 32                android:name="android.support.PARENT_ACTIVITY"
-32-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:22:17-63
+32-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:24:17-63
 33                android:value=".MainActivity" />
-33-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:23:17-46
+33-->/home/pasha/android-course/lab(1)/app/src/main/AndroidManifest.xml:25:17-46
 34        </activity>
 35    </application>
 36
