@@ -759,8 +759,8 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id editText
-id editText2
+id editAnswer
+id editQuestion
 id edit_query
 id end
 id expand_activities_button
@@ -846,10 +846,10 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textAnswer
+id textQuestion
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
-id textView2
 id time
 id title
 id titleDividerNoCustom

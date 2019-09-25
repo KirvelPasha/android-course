@@ -758,8 +758,8 @@ int id dialog_button 0x7f070050
 int id dimensions 0x7f070051
 int id direct 0x7f070052
 int id disableHome 0x7f070053
-int id editText 0x7f070054
-int id editText2 0x7f070055
+int id editAnswer 0x7f070054
+int id editQuestion 0x7f070055
 int id edit_query 0x7f070056
 int id end 0x7f070057
 int id expand_activities_button 0x7f070058
@@ -845,10 +845,10 @@ int id tag_unhandled_key_event_manager 0x7f0700a7
 int id tag_unhandled_key_listeners 0x7f0700a8
 int id text 0x7f0700a9
 int id text2 0x7f0700aa
-int id textSpacerNoButtons 0x7f0700ab
-int id textSpacerNoTitle 0x7f0700ac
-int id textView 0x7f0700ad
-int id textView2 0x7f0700ae
+int id textAnswer 0x7f0700ab
+int id textQuestion 0x7f0700ac
+int id textSpacerNoButtons 0x7f0700ad
+int id textSpacerNoTitle 0x7f0700ae
 int id time 0x7f0700af
 int id title 0x7f0700b0
 int id titleDividerNoCustom 0x7f0700b1

@@ -18,18 +18,13 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1) {
-            val answer = data?.getStringExtra(MESSAGE)
-            val textView = findViewById<TextView>(R.id.textView).apply {
-                text = answer
-            }
+            textAnswer.text = data?.getStringExtra(MESSAGE)
         }
     }
 
     fun sendQuestion(view : View) {
-        val editText = editText.text
-        val question = editText.toString()
         val intent = Intent(this,SecondActivity::class.java).apply {
-            putExtra(MESSAGE,question)
+            putExtra(MESSAGE,editQuestion.text.toString())
         }
         startActivityForResult(intent,1)
     }

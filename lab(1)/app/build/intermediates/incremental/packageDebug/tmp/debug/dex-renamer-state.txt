@@ -1,4 +1,4 @@
-#Wed Sep 25 22:37:02 MSK 2019
+#Wed Sep 25 23:06:12 MSK 2019
 base.0=/home/pasha/android-course/lab(1)/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

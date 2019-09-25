@@ -13,17 +13,14 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
-        textView2.text = intent.getStringExtra(MESSAGE)
+        textQuestion.text = intent.getStringExtra(MESSAGE)
     }
 
     fun sendAnswer(view : View) {
-        val editText = editText2.text
-        val answer = editText.toString()
         val intent = Intent(this,MainActivity::class.java).apply {
-            putExtra(MESSAGE,answer)
+            putExtra(MESSAGE,editAnswer.text.toString())
         }
         setResult(Activity.RESULT_OK,intent)
         finish()
     }
-
 }
