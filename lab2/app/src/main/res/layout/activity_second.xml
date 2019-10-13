@@ -8,7 +8,7 @@
         android:id="@+id/textQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/WelcomeText"
+        style="@style/style_text"
         android:text="" />
 
     <EditText
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        style="@style/WelcomeText"
+        style="@style/style_text"
         android:text="" />
 
     <Button
@@ -25,6 +25,6 @@
         android:onClick="sendAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/WelcomeText"
-        android:text="Ok" />
+        style="@style/style_text"
+        android:text="@string/button" />
 </LinearLayout>
