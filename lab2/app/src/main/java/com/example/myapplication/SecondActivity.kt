@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity() {
     }
 
     fun sendAnswer(view : View) {
-        val intent = Intent(this,MainActivity::class.java).apply {
+        val intent = Intent().apply {
             putExtra(MESSAGE,editAnswer.text.toString())
         }
         setResult(Activity.RESULT_OK,intent)

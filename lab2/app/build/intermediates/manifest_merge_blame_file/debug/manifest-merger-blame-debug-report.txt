@@ -11,7 +11,7 @@
 9-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:5:5-19:19
+11-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
 12-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -26,23 +26,24 @@
 18        android:testOnly="true"
 19        android:theme="@style/AppTheme" >
 19-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:10:9-40
-20        <activity android:name="com.example.myapplication.SecondActivity" />
-20-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:11:9-61
+20        <activity android:name="com.example.myapplication.SecondActivity" >
+20-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:11:9-12:20
 20-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:11:19-49
-21        <activity android:name="com.example.myapplication.MainActivity" >
-21-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:12:9-18:20
-21-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:14:17-69
-23-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:16:17-77
-25-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+21        </activity>
+22        <activity android:name="com.example.myapplication.MainActivity" >
+22-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:13:9-20:20
+22-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:13:19-47
+23            <intent-filter>
+23-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:15:13-19:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:16:17-69
+24-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:16:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:18:17-77
+26-->/home/pasha/android-course/lab2/app/src/main/AndroidManifest.xml:18:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

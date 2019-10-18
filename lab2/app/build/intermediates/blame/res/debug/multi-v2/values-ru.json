@@ -36,18 +36,18 @@
                 {
                     "source": "/home/pasha/android-course/lab2/app/src/main/res/values-ru/strings.xml",
                     "from": {
-                        "startLines": "-1,2",
-                        "startColumns": "-1,4",
-                        "startOffsets": "-1,79",
-                        "endColumns": "-1,65",
-                        "endOffsets": "-1,140"
+                        "startLines": "-1,-1,4,-1",
+                        "startColumns": "-1,-1,4,-1",
+                        "startOffsets": "-1,-1,228,-1",
+                        "endColumns": "-1,-1,79,-1",
+                        "endOffsets": "-1,-1,303,-1"
                     },
                     "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2822,2885",
-                        "endColumns": "62,65",
-                        "endOffsets": "2880,2946"
+                        "startLines": "29,30,33,34",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2822,2885,3133,3213",
+                        "endColumns": "62,65,79,82",
+                        "endOffsets": "2880,2946,3208,3291"
                     }
                 }
             ]

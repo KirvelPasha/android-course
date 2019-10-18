@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,7 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1) {
-            textAnswer.text = data?.getStringExtra(MESSAGE)
+            if (resultCode == Activity.RESULT_OK) {
+                textAnswer.text = data?.getStringExtra(MESSAGE)
+            }
         }
     }
 
