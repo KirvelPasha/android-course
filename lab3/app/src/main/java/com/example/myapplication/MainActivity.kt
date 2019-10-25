@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         return when (item?.itemId) {
             R.id.close -> {
-                Toast.makeText(applicationContext, "click on setting", Toast.LENGTH_LONG).show()
+                val exitDialog = ExitDialog()
+                exitDialog.show(supportFragmentManager,"dialog")
                 true
             }
             else -> super.onOptionsItemSelected(item)

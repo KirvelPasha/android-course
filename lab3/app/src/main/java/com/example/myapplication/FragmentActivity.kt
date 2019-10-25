@@ -6,13 +6,18 @@ import android.view.*
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_activity.*
+import kotlin.math.log
 
 class FragmentActivity : Fragment(), View.OnClickListener {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-
         val view: View = inflater.inflate(R.layout.fragment_activity, container, false)
         val button: Button = view.findViewById(R.id.button)
         button.setOnClickListener(this)

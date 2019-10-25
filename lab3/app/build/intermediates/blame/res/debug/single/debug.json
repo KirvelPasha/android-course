@@ -36,10 +36,6 @@
         "source": "/home/pasha/android-course/lab3/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/layout_fragment_textview.xml.flat",
-        "source": "/home/pasha/android-course/lab3/app/src/main/res/layout/fragment_textview.xml"
-    },
-    {
         "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/pasha/android-course/lab3/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },

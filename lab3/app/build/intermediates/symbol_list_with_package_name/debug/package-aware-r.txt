@@ -851,7 +851,6 @@ id textAnswer
 id textQuestion
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id time
 id title
 id titleDividerNoCustom
@@ -909,7 +908,6 @@ layout activity_main
 layout activity_second
 layout custom_dialog
 layout fragment_activity
-layout fragment_textview
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
