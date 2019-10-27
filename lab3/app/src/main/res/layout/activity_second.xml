@@ -3,11 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <TextView
+        android:id="@+id/suggestionAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/style_text"
+        android:text="@string/suggestionAnswer" />
 
     <TextView
         android:id="@+id/textQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/style_text"
         android:text="" />
 
     <fragment
