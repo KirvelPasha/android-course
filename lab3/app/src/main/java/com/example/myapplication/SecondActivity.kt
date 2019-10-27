@@ -1,10 +1,13 @@
 package com.example.myapplication
 
+import android.app.PendingIntent.getActivity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_second.*
+import kotlinx.android.synthetic.main.fragment_activity.*
 
 class SecondActivity : AppCompatActivity() {
 
