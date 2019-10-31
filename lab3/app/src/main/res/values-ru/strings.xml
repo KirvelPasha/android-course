@@ -3,4 +3,5 @@
     <string name="button" translatable="false">Отправить</string>
     <string name="suggestionQuestion" translatable="false">Введите вопрос</string>
     <string name="suggestionAnswer" translatable="false">Введите ответ</string>
+    <string name="close_app">Закрыть приложение</string>
 </resources>

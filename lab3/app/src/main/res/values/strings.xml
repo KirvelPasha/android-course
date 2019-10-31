@@ -3,4 +3,5 @@
     <string name="button" translatable="false">Send</string>
     <string name="suggestionQuestion" translatable="false">Input question</string>
     <string name="suggestionAnswer" translatable="false">Input answer</string>
+    <string name="close_app">Close app</string>
 </resources>

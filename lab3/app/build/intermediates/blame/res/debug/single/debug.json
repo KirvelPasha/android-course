@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/pasha/android-course/lab3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
         "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "/home/pasha/android-course/lab3/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/pasha/android-course/lab3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "/home/pasha/android-course/lab3/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/pasha/android-course/lab3/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/pasha/android-course/lab3/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/pasha/android-course/lab3/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/home/pasha/android-course/lab3/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",

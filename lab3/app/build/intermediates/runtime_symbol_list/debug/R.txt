@@ -951,10 +951,11 @@ int string abc_shareactionprovider_share_with_application 0x7f0d0019
 int string abc_toolbar_collapse_description 0x7f0d001a
 int string app_name 0x7f0d001b
 int string button 0x7f0d001c
-int string search_menu_title 0x7f0d001d
-int string status_bar_notification_info_overflow 0x7f0d001e
-int string suggestionAnswer 0x7f0d001f
-int string suggestionQuestion 0x7f0d0020
+int string close_app 0x7f0d001d
+int string search_menu_title 0x7f0d001e
+int string status_bar_notification_info_overflow 0x7f0d001f
+int string suggestionAnswer 0x7f0d0020
+int string suggestionQuestion 0x7f0d0021
 int style AlertDialog_AppCompat 0x7f0e0000
 int style AlertDialog_AppCompat_Light 0x7f0e0001
 int style Animation_AppCompat_Dialog 0x7f0e0002
