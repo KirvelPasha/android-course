@@ -8,7 +8,7 @@ import java.lang.StringBuilder
 const val QUANTITY = "quantity"
 const val NUMBERS = "numbers"
 
-class MainIntentService : IntentService("MyService") {
+class MainIntentService : IntentService("MainIntentService") {
 
     override fun onHandleIntent(intent: Intent?) {
         val n = intent?.getIntExtra(MESSAGE, 0)
@@ -46,12 +46,6 @@ class MainIntentService : IntentService("MyService") {
                 str.append(", ")
             }
         }
-//        for (i in 0 until numbers.size) {
-//            str.append(numbers.get(i))
-//            if (i != numbers.size - 1) {
-//                str.append(", ")
-//            }
-//        }
         return str
     }
 }

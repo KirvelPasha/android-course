@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         button.isEnabled = false;
     }
 
-    val broadCastReceiver = object : BroadcastReceiver() {
+    private val broadCastReceiver = object : BroadcastReceiver() {
         override fun onReceive(contxt: Context?, intent: Intent?) {
             val quantity = intent?.getIntExtra(QUANTITY, 0)
             val numbers = intent?.getStringExtra(NUMBERS)
