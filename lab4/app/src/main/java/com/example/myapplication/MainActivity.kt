@@ -23,12 +23,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        LocalBroadcastManager.getInstance(this).registerReceiver(broadCastReceiver, IntentFilter("main_activity"))
+        LocalBroadcastManager.getInstance(this)
+        .registerReceiver(broadCastReceiver, IntentFilter("main_activity"))
     }
 
-    override fun onConfigurationChanged(newConfig: Configuration) {
-        super.onConfigurationChanged(newConfig)
-    }
     fun send(view: View) {
         val intent = Intent(this, MainIntentService::class.java)
         intent.putExtra(MESSAGE, inputNumber.text.toString().toInt())
