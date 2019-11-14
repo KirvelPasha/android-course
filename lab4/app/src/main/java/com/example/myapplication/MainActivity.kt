@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MainIntentService::class.java)
         intent.putExtra(MESSAGE, inputNumber.text.toString().toInt())
         startService(intent)
-        button.isEnabled = false;
+        button.isEnabled = false
     }
 
     private val broadCastReceiver = object : BroadcastReceiver() {
