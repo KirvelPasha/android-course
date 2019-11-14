@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     fun send(view: View) {
         val intent = Intent(this, MainIntentService::class.java)
         intent.putExtra(MESSAGE, inputNumber.text.toString().toInt())
-        this.startService(intent)
+        startService(intent)
         button.isEnabled = false;
     }
 
