@@ -39,7 +39,7 @@ class MainIntentService : IntentService("MainIntentService") {
     }
 
     private fun numbersToString(numbers: ArrayList<Int>): StringBuilder {
-        val str: StringBuilder = StringBuilder()
+        val str = StringBuilder()
         for (i in numbers) {
             str.append(i)
             if (i != numbers.last()) {
