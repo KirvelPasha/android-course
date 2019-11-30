@@ -799,6 +799,7 @@ id parentPanel
 id percent
 id progress_circular
 id progress_horizontal
+id quantityNumbers
 id radio
 id right
 id right_icon
@@ -847,7 +848,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id time
 id title
 id titleDividerNoCustom
