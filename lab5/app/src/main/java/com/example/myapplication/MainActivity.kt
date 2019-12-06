@@ -1,12 +1,41 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
+import com.example.myapplication.dao.db.AppDatabase
+import com.example.myapplication.dao.entity.User
+import com.example.myapplication.dao.interfaces.UserDao
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private var db: AppDatabase? = null
+    private var userDao: UserDao? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "test"
+        ).allowMainThreadQueries().build()
+        userDao = db?.userDao()
+    }
+
+    fun insert(view: View) {
+        val user: User = User()
+        user.firstName = firstName.text.toString()
+        user.lastName = lastName.text.toString()
+
+        userDao?.insert(user)
+    }
+
+    fun getByFilter(view: View) {
+        val firstName = firstName.text  .toString()
+        val lastName = lastName.text.toString()
+        textView.text = userDao?.getByFilter(firstName, lastName).toString()
     }
 }
