@@ -742,6 +742,7 @@ id beginning
 id blocking
 id bottom
 id button
+id button2
 id buttonPanel
 id center_vertical
 id chains

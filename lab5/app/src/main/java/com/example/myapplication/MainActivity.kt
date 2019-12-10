@@ -18,10 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java, "test"
-        ).allowMainThreadQueries().build()
+        db = AppDatabase.getInstance(this.applicationContext)
         userDao = db?.userDao()
     }
 
@@ -34,8 +31,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getByFilter(view: View) {
-        val firstName = firstName.text  .toString()
+        val firstName = firstName.text.toString()
         val lastName = lastName.text.toString()
-        textView.text = userDao?.getByFilter(firstName, lastName).toString()
+        textView.text = userDao?.getAll().toString()
     }
 }

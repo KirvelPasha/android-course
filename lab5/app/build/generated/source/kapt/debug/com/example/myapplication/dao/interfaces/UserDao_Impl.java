@@ -25,12 +25,12 @@ public final class UserDao_Impl implements UserDao {
     this.__insertionAdapterOfUser = new EntityInsertionAdapter<User>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `User` (`uid`,`first_name`,`last_name`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR ABORT INTO `User` (`id`,`first_name`,`last_name`,`birthday`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, User value) {
-        stmt.bindLong(1, value.getUid());
+        stmt.bindLong(1, value.getId());
         if (value.getFirstName() == null) {
           stmt.bindNull(2);
         } else {
@@ -40,6 +40,11 @@ public final class UserDao_Impl implements UserDao {
           stmt.bindNull(3);
         } else {
           stmt.bindString(3, value.getLastName());
+        }
+        if (value.getBirthday() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getBirthday());
         }
       }
     };
@@ -64,19 +69,22 @@ public final class UserDao_Impl implements UserDao {
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
-      final int _cursorIndexOfUid = CursorUtil.getColumnIndexOrThrow(_cursor, "uid");
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final int _cursorIndexOfFirstName = CursorUtil.getColumnIndexOrThrow(_cursor, "first_name");
       final int _cursorIndexOfLastName = CursorUtil.getColumnIndexOrThrow(_cursor, "last_name");
+      final int _cursorIndexOfBirthday = CursorUtil.getColumnIndexOrThrow(_cursor, "birthday");
       final List<User> _result = new ArrayList<User>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final User _item;
-        final int _tmpUid;
-        _tmpUid = _cursor.getInt(_cursorIndexOfUid);
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
         final String _tmpFirstName;
         _tmpFirstName = _cursor.getString(_cursorIndexOfFirstName);
         final String _tmpLastName;
         _tmpLastName = _cursor.getString(_cursorIndexOfLastName);
-        _item = new User(_tmpUid,_tmpFirstName,_tmpLastName);
+        final String _tmpBirthday;
+        _tmpBirthday = _cursor.getString(_cursorIndexOfBirthday);
+        _item = new User(_tmpId,_tmpFirstName,_tmpLastName,_tmpBirthday);
         _result.add(_item);
       }
       return _result;
