@@ -7,11 +7,9 @@ import com.example.myapplication.dao.entity.User
 
 @Dao
 interface UserDao {
-    @Query("SELECT * FROM user")
-    fun getAll(): List<User>
-
-    @Query("SELECT id, first_name, last_name FROM user WHERE first_name LIKE :first AND last_name LIKE :last LIMIT 1")
-    fun getByFilter(first: String, last: String)
+    @Query("SELECT id, first_name, last_name, birthday FROM user " +
+            "WHERE first_name LIKE :first AND last_name LIKE :last")
+    fun getByFilter(first: String, last: String): List<User>
 
     @Insert
     fun insert(user: User)

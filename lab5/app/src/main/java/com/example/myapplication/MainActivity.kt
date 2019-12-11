@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val user: User = User()
         user.firstName = firstName.text.toString()
         user.lastName = lastName.text.toString()
+        user.birthday = birthday.text.toString()
 
         userDao?.insert(user)
     }
@@ -33,6 +34,6 @@ class MainActivity : AppCompatActivity() {
     fun getByFilter(view: View) {
         val firstName = firstName.text.toString()
         val lastName = lastName.text.toString()
-        textView.text = userDao?.getAll().toString()
+        textView.text = userDao?.getByFilter(firstName, lastName).toString()
     }
 }
