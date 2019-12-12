@@ -64,7 +64,7 @@ public final class UserDao_Impl implements UserDao {
 
   @Override
   public List<User> getByFilter(final String first, final String last) {
-    final String _sql = "SELECT id, first_name, last_name, birthday FROM user WHERE first_name LIKE ? AND last_name LIKE ?";
+    final String _sql = "SELECT id, first_name, last_name, birthday FROM user WHERE first_name LIKE '%' || ? || '%' AND last_name LIKE '%' || ? || '%'";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
     int _argIndex = 1;
     if (first == null) {
@@ -73,6 +73,44 @@ public final class UserDao_Impl implements UserDao {
       _statement.bindString(_argIndex, first);
     }
     _argIndex = 2;
+    if (last == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, last);
+    }
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfFirstName = CursorUtil.getColumnIndexOrThrow(_cursor, "first_name");
+      final int _cursorIndexOfLastName = CursorUtil.getColumnIndexOrThrow(_cursor, "last_name");
+      final int _cursorIndexOfBirthday = CursorUtil.getColumnIndexOrThrow(_cursor, "birthday");
+      final List<User> _result = new ArrayList<User>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final User _item;
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        final String _tmpFirstName;
+        _tmpFirstName = _cursor.getString(_cursorIndexOfFirstName);
+        final String _tmpLastName;
+        _tmpLastName = _cursor.getString(_cursorIndexOfLastName);
+        final String _tmpBirthday;
+        _tmpBirthday = _cursor.getString(_cursorIndexOfBirthday);
+        _item = new User(_tmpId,_tmpFirstName,_tmpLastName,_tmpBirthday);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public List<User> getByFilter(final String last) {
+    final String _sql = "SELECT id, first_name, last_name, birthday FROM user WHERE last_name LIKE '%' || ? || '%' ";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
     if (last == null) {
       _statement.bindNull(_argIndex);
     } else {

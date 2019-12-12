@@ -8,8 +8,11 @@ import com.example.myapplication.dao.entity.User
 @Dao
 interface UserDao {
     @Query("SELECT id, first_name, last_name, birthday FROM user " +
-            "WHERE first_name LIKE :first AND last_name LIKE :last")
+            "WHERE first_name LIKE '%' || :first || '%' AND last_name LIKE '%' || :last || '%'")
     fun getByFilter(first: String, last: String): List<User>
+
+    @Query("SELECT id, first_name, last_name, birthday FROM user WHERE last_name LIKE '%' || :last || '%' ")
+    fun getByFilter(last: String): List<User>
 
     @Insert
     fun insert(user: User)
