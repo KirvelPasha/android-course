@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     fun getByFilter(view: View) {
         val firstName = firstName.text.toString()
         val lastName = lastName.text.toString()
-        print(firstName.isEmpty())
         if (firstName.isEmpty() and lastName.isNotEmpty()) {
             textView.text = userDao?.getByFilter(lastName).toString()
         } else if(firstName.isNotEmpty() and lastName.isNotEmpty()) {
