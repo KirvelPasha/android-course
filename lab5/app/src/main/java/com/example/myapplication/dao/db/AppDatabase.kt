@@ -22,7 +22,6 @@ abstract class AppDatabase : RoomDatabase() {
                 ).allowMainThreadQueries()
                     .build()
             }
-
             return appDatabase!!
         }
 
