@@ -18,7 +18,7 @@ abstract class AppDatabase : RoomDatabase() {
             if (appDatabase == null) {
                 appDatabase = Room.databaseBuilder(
                     context.applicationContext,
-                    AppDatabase::class.java, "test"
+                    AppDatabase::class.java, "lab5"
                 ).allowMainThreadQueries()
                     .build()
             }
